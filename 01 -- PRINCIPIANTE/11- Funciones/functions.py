@@ -38,6 +38,7 @@ print_name_with_default('Brais', 'Moure')
 
 # Se pueden pasar tantos parametros como se quiera
 def print_text(*text):
+	print(type(text))  # Es una TUPLA
 	# Como lista infinita, se puede recorer como tal
 	for element in text:
 		print(element)
