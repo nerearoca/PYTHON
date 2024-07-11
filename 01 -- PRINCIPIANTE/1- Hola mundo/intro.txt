@@ -1,0 +1,14 @@
+Sitios web a tener en cuenta para Python:
+ - Web oficial --> Python.org
+ -  
+ - Aprender python  --> playground online --> casi cualquir playground, para practica
+
+ - wiki de python --> tutorial oficial
+
+ Empezar con python :
+  - Github --> 30 Day with python
+	- Codedex --> The legent of python  -> Estilo 'Playgrounf game'
+
+TIPOS DE DATOS:
+ - Cadenas de texto --> String
+ - Numeros
