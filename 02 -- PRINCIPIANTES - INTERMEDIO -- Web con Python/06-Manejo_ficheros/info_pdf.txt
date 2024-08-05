@@ -1,0 +1,8 @@
+IES JOAN RAMIS I RAMIS
+Departament d’InformàticaUD7: VueJs
+Web interface design CFGS DAW – 2nd course
+UD7. Activity 5
+In this activity we are going to add a Pinia store where we will save the posts.
+All CRUD operations must be performed on the store (including accesses to the
+localStorage).
+Pinia documentation: https://pinia.vuejs.org/  

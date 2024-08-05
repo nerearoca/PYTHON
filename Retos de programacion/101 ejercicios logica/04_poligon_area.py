@@ -25,7 +25,7 @@ def area_poligono(poligono):
 	else:
 		print("None")
 
-tipo_poligono = input('Tipo de poligono? 1)Triangulo 2)Cuadrado 3)Rectangulo 4)Otro')
+tipo_poligono = input('Tipo de poligono? 1)Triangulo 2)Cuadrado 3)Rectangulo 4)Otro ')
 if tipo_poligono:
 
 	if int(tipo_poligono) == 1:
