@@ -88,7 +88,8 @@
 # .xml
 # import xml
 
-# .pdf
+# .pdf --> hay dos tipos de archivos pdf(con el texto plano este sirve, con los demas no)
+
 import PyPDF2
 pdf = open('06-Manejo_ficheros/ud7_diw_activity5.pdf', "rb")
 reader = PyPDF2.PdfReader(pdf)
