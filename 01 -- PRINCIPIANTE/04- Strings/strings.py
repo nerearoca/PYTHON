@@ -52,6 +52,9 @@ print('language[1:]: ' + language_slice);
 language_slice = language[-2];  # Pilla de detras posicion 2  (-2)
 print('language[-2]: ' + language_slice);
 
+language_slice = language[2];  # Pilla de detras posicion 2  (-2)
+print('language[2]: ' + language_slice);
+
 language_slice = language[1:2:4];  #Solo recoge 2 --> evira caracteres
 print('language[1:2:4]: ' + language_slice);
 
