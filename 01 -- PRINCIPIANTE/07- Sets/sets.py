@@ -2,7 +2,6 @@
 ## De base un arrays 
 
 
-
 # Definicion 
 my_set = set()
 my_other_set = {}  #Misma sintaxis que los diccionarios
