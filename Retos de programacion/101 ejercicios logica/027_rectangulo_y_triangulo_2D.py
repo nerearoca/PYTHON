@@ -6,7 +6,7 @@
 
 
 def drawPolygon(altura, tipo):
-	print(tipo)
+	espacio = 0
 	
 	if altura > 1:
 		if tipo == 'square':
@@ -17,27 +17,58 @@ def drawPolygon(altura, tipo):
 				print(ancho)
 
 		elif tipo == 'triangle':
-			
-			for alt in range(1, altura + 1):
+			for alt in range(1, altura + 1):	
 				ancho = ""
-				for anc in range(1, alt + 1):	
-					ancho += '*'
+				anchoo = altura - alt
+				for anc in range(1, anchoo + 1):
+					ancho += " "
+				for anc in range(0, alt * 2 - 1):
+					ancho += '*'		
 				print(ancho)
 
-		elif tipo == 'diamond':
-			mitad = altura  / 2
-			for alt in range(1, altura + 1):
-				ancho = ""
-				if alt < mitad:
-					for anc in range(1, alt + 1):	
-						ancho += '*'
+		elif tipo == 'diamond':	
+			# print(int(altura / 2))
+
+			for alt in range(1, altura + 1):	
+				if alt <= int(altura / 2) + 1:
+					ancho = ""
+					anchoo = int(altura / 2) + 1 - alt
+					for anc in range(1, anchoo + 1):
+						ancho += " "
+					for anc in range(0, alt * 2 - 1):
+						ancho += '*'		
+					print(ancho)
 				else:
-					print('Hola')
-				print(ancho)
+					ancho = ""
+					anchoo = altura - alt + 1
+					# print(anchoo)
+
+					espacio += 1
+					for anc in range(0, espacio):
+						ancho += ' '		
+					for anc in range(0, anchoo * 2 - 1):
+						ancho += "*"
+					# for anc in range(0, alt * 2 - 1):
+						
+						# ancho += ' '		
+					# if anchoo < 1:
+					# 	for anc in range(1, anchoo - 1):
+					# 		ancho += " "
+					# else:
+					# 	for anc in range(1, anchoo * 2 + 1):
+					# 		ancho += " "
+					# for anc in range(0, anchoo * 2 - 1):
+					# 	ancho += '*'	
+
+					# for anc in range(0, alt * 2 - 1):		
+					# 	ancho += '*'		
+					print(ancho)
 
 
-# print("square")
-# drawPolygon(10,"square")
-# print("TRIANGLE")
-# drawPolygon(15,"triangle")
-drawPolygon(12,"diamond")
+
+print("SQUARE: 4")
+drawPolygon(4,"square")
+print("\nTRIANGLE: 5")
+drawPolygon(5,"triangle")
+print("\nDIAMOND: 7")
+drawPolygon(5,"diamond")
